@@ -18,6 +18,10 @@ Polynomial::Polynomial() {
 ///	@param coefficients array with the coefficients (format: c0+c1*x+ ...)
 ///	@param size size of the array
 Polynomial::Polynomial(const double* coefficients, int size) {
+
+	degree= -1;
+	coeff = NULL;
+	
 	SetPolynomial(coefficients,size);
 }
 
